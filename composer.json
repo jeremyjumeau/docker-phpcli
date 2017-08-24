@@ -1,0 +1,16 @@
+{
+    "name": "jeremyjumeau/docker-phpcli",
+    "description": "A docker image of PHP CLi with useful dev tools",
+    "type": "project",
+    "require-dev": {
+        "m6web/symfony2-coding-standard": "^3.3"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jeremy Jumeau",
+            "email": "jumeau.jeremy@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
