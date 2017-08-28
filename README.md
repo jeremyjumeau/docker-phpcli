@@ -66,7 +66,7 @@ Finally, test the `php` command:
 ```bash
 wget https://raw.githubusercontent.com/jeremyjumeau/docker-phpcli/master/cli-setup.sh
 chmod +x cli-setup.sh
-./cli-setup.sh
+sudo ./cli-setup.sh
 ```
 
 This will install `php` commands and all commands listed in the *Overview* section.
