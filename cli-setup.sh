@@ -3,7 +3,7 @@
 createCommand() {
     rm $2 2> /dev/null
     echo "#!/bin/bash" >> $2
-    echo "docker run -i --rm -v \$(pwd):\$(pwd) -u $(id -u) -e HOME -w \$(pwd) jeremyjumeau/phpcli $1 \$@" >> $2
+    echo "docker run -i --rm --net=host -v \$(pwd):\$(pwd) -v \$HOME/.composer:/.composer -u \$(id -u) -w \$(pwd) jeremyjumeau/phpcli $1 \$@" >> $2
     chmod +x $2
 }
 
